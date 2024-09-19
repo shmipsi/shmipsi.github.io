@@ -44,6 +44,16 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.plans-div {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 footer {
     font-family: Arial, sans-serif;
     display: flex;
@@ -234,10 +244,21 @@ footer {
     width: 80%;
 }
 
+.container-vert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 1%;
+    margin: 1%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
 h2 {
     color: #333;
     font-size: 2em;
-    width: 100%;
 }
 
 p {
