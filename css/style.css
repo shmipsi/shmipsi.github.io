@@ -3,8 +3,8 @@ body{
     margin: 0;
     padding: 0;
     width: 100%;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #F7EED3;
+    color: #FFF8E8;
     font-family: Arial, sans-serif;
     justify-content: center;
     align-items: center;
@@ -21,10 +21,9 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: #00BAF0;
-    background: linear-gradient(to left, #b445f4, #4975ee);
+    background-color: #AAB396;
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: #FFF;
+    color: #FFF8E8;
     height: 50px;
     width: 100%;
     padding: 1em;
@@ -46,7 +45,7 @@ nav {
 
 .menu li a {
     text-decoration: none;
-    color: white;
+    color: #FFF8E8;
     padding: 5px;
     position: relative;
 }
@@ -56,7 +55,7 @@ nav {
     position: absolute;
     width: 0;
     height: 2px;
-    background-color: white;
+    background-color: #FFF8E8;
     left: 50%;
     bottom: 0;
     transition: all 0.3s ease;
@@ -92,7 +91,7 @@ main {
     width: 100%;
     height: auto;
     border-radius: 10%;
-    background-color: #b445f4;
+    background-color: #674636;
     padding: 1%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -111,8 +110,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #c1c1c1;
-    color: black;
+    background-color: #674636;
+    color: #FFF8E8;
     width: 100%;
 }
 
@@ -147,11 +146,19 @@ footer {
     text-align: right;
 }
 
+footer p {
+    color: #FFF8E8;
+}
+
+footer a {
+    color: #FFF8E8;
+}
+
 .container {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
+    background-color: #AAB396;
     padding: 1%;
     margin: 1%;
     border-radius: 15px;
@@ -164,7 +171,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
+    background-color: #AAB396;
     padding: 1%;
     margin: 1%;
     border-radius: 15px;
@@ -180,13 +187,14 @@ h2 {
     display: inline-block;
     padding: 10px 20px;
     margin: 10px;
-    background-color: #007BFF;
-    color: white;
+    background-color: #674636;
+    color: #FFF8E8;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 .button:hover {
-    background-color: #0056b3;
+    background-color: #FFF8E8;
+    color: #674636;
 }
