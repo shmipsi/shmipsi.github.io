@@ -72,7 +72,6 @@ main {
 }
 
 .div-columns {
-    display: block;
     width: 100%;
     columns: 380px;
     margin: 1%;
