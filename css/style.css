@@ -72,8 +72,9 @@ main {
 }
 
 .div-columns {
+    display: block;
     width: 100%;
-    columns: 300px;
+    columns: 380px;
     margin: 1%;
     padding: 1%;
 }
