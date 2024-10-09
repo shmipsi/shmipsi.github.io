@@ -1,20 +1,88 @@
+/*
+TODO
+*main make containers suitable
+*main make a border for container
+*/
 body {
     width: 100%;
-    height: 1em;
-    background-color: #2E236C;
-    color: #C8ACD6;
+    background-color: #CDB4DB;
+    color: white;
     margin: 0%;
     padding: 0%;
+    font-family: bahnschrift;
+    text-align: center;
 }
 
-header {
-    background-color: #17153B;
+header, main {
+    max-width: 800px;
+    margin: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    border-radius: 10px;
+    background-color: #A2D2FF;
 }
 
-main {
-    display: flex;
+/* header */
+.banner {
+    width: 100%;
+}
+
+.menu {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    margin-top: 1%;
+    justify-content: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 21px;
+    padding: 2%;
+    padding-left: 8%;
+    padding-right: 8%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.menu a:hover {
+    background-color: #BDE0FE;
+}
+
+/* main */
+.mainbg {
+    width: 98%;
+    padding: 1%;
+    background-color: #BDE0FE;
+}
+
+.side-container {
+    max-width: 20%;
+    margin: 1%;
+    padding: 1%;
+    background-color: #FFC8DD;
+    border-radius: 10px;
+}
+
+.container {
+    max-width: 40%;
+    margin: 1%;
+    padding: 1%;
+    background-color: #FFC8DD;
+    border-radius: 10px;
+}
+
+.icon {
+    width: 100%;
+    clip-path: circle();
+}
+
+.onlinenow {
+    width: 100%;
 }
 
 footer {
-    background-color: #17153B;
+    color: white;
 }
