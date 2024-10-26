@@ -1,15 +1,17 @@
 /* TODO
 *remeke font sizes (make it dynamic)
+*change font famili
 */
 body {
     width: 100%;
-    background-color: #F4A259;
     color: white;
     margin: 0%;
     padding: 0%;
     font-family: bahnschrift;
     font-size: large;
     text-align: center;
+    background-image: url("images/background.jpg");
+    background-color: black;
 }
 
 header, main {
