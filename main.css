@@ -21,7 +21,7 @@ header, main {
     margin-right: auto;
     padding: 1%;
     border-radius: 10px;
-    background-color: #BC4B51;
+    background-color: rgba(0, 0, 0, 0.25);
 }
 
 @media (max-width: 850px) {
@@ -43,6 +43,9 @@ header, main {
     display: flex;
     justify-content: center;
     align-items: center;
+    align-items: stretch;
+    border-radius: 10px;
+    border: 3px solid rgba(255, 255, 255, 0.25);
 }
 
 .menu a {
@@ -57,17 +60,15 @@ header, main {
 }
 
 .menu a:hover {
-    background-color: #5B8E7D;
+    background-color: rgba(0, 0, 0, 0.25);
 }
 
 /* main */
-.mainbg {
-    width: 98%;
-    padding: 1%;
+
+main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #F4A259;
 }
 
 /* containers */
@@ -75,10 +76,12 @@ header, main {
     margin: 1%;
     padding: 1%;
     align-items: stretch;
-    background-color: #F4E285;
+    background-color: rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-    border: 3px solid #BC4B51;
-    color: black;
+    border: 3px solid rgba(255, 255, 255, 0.25);
+}
+.side-container a, .container a {
+    color: white;
 }
 
 .side-container {
@@ -90,6 +93,11 @@ header, main {
     padding: 3%;
 }
 
+/* other */
+hr {
+    color: white;
+}
+
 .text {
     text-align: left;
 }
@@ -97,7 +105,7 @@ header, main {
 .icon {
     width: 100%;
     clip-path: circle();
-    border: 3px solid #BC4B51;
+    border: 3px solid rgb(255 255 255 / 0.25);
     border-radius: 50%;
     box-sizing: border-box;
 }
