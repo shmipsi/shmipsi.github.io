@@ -1,5 +1,4 @@
 /* TODO
-*remeke font sizes (make it dynamic)
 *change font famili
 */
 body {
@@ -13,20 +12,26 @@ body {
     background-image: url("images/background.jpg");
     background-color: black;
     background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 header,
 main {
     max-width: 800px;
+    /* margin: 0%; */
+    /* padding: 0%; */
     margin: 1%;
+    padding: 1%;
     margin-left: auto;
     margin-right: auto;
-    padding: 1%;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.25);
 }
 
 @media (max-width: 850px) {
+    body {
+        font-size: 3vw;
+    }
 
     header,
     main {
@@ -39,18 +44,15 @@ main {
 
 .menu {
     width: 100%;
-    margin: 0%;
-    padding: 0%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .menu a {
     text-decoration: none;
     color: white;
-    font-size: 21px;
     padding: 2%;
     padding-left: 5%;
     padding-right: 5%;
@@ -59,7 +61,7 @@ main {
 }
 
 .menu a:hover {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.25);
 }
 
 /* main */
@@ -73,26 +75,40 @@ main {
 /* containers */
 .side-container,
 .container {
-    margin: 1%;
+    margin: 0%;
     padding: 1%;
     align-items: stretch;
-    background-color: rgba(0, 0, 0, 0.25);
+    /* background-color: rgba(0, 0, 0, 0.25); */
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
-    border: 3px solid rgba(255, 255, 255, 0.75);
+    /* border: 3px solid rgba(255, 255, 255, 0.75); */
 }
 
 .side-container a,
 .container a {
-    color: white;
+    color: bisque;
 }
 
 .side-container {
-    max-width: 20%;
+    max-width: 25%;
+    margin-right: 2%
 }
 
 .container {
     max-width: 100%;
     padding: 3%;
+}
+
+.update-box {
+    max-height: 150px;
+    width: auto;
+    padding: 3%;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    border-radius: 5px;
+    overflow-y: scroll;
+    background-color: rgba(0, 0, 0, 0.25);
+    overflow-wrap: normal;
+    /* scrollbar-color: rgb(240, 74, 121) rgb(255, 163, 172); */
 }
 
 /* other */
@@ -116,13 +132,14 @@ hr {
     width: 100%;
 }
 */
- 
+
 .icon {
     width: 100%;
     clip-path: circle();
-    border: 3px solid rgb(255 255 255 / 0.5);
+    border: 3px solid rgba(255, 255, 255, 0.5);
     border-radius: 50%;
     box-sizing: border-box;
+    padding: 2%;
 }
 
 .image {
