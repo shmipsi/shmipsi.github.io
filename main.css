@@ -12,29 +12,30 @@ body {
     text-align: center;
     background-image: url("images/background.jpg");
     background-color: black;
+    background-repeat: no-repeat;
 }
 
-header, main {
+header,
+main {
     max-width: 800px;
     margin: 1%;
     margin-left: auto;
     margin-right: auto;
     padding: 1%;
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 255, 255, 0.25);
 }
 
 @media (max-width: 850px) {
-    header, main {
+
+    header,
+    main {
         margin-left: 2%;
         margin-right: 2%;
     }
 }
 
 /* header */
-.banner {
-    width: 100%;
-}
 
 .menu {
     width: 100%;
@@ -43,9 +44,7 @@ header, main {
     display: flex;
     justify-content: center;
     align-items: center;
-    align-items: stretch;
-    border-radius: 10px;
-    border: 3px solid rgba(255, 255, 255, 0.25);
+    background-color: rgba(0, 0, 0, 0.25);
 }
 
 .menu a {
@@ -60,7 +59,7 @@ header, main {
 }
 
 .menu a:hover {
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* main */
@@ -72,15 +71,18 @@ main {
 }
 
 /* containers */
-.side-container, .container {
+.side-container,
+.container {
     margin: 1%;
     padding: 1%;
     align-items: stretch;
     background-color: rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-    border: 3px solid rgba(255, 255, 255, 0.25);
+    border: 3px solid rgba(255, 255, 255, 0.75);
 }
-.side-container a, .container a {
+
+.side-container a,
+.container a {
     color: white;
 }
 
@@ -102,10 +104,23 @@ hr {
     text-align: left;
 }
 
+/*
+.icon-frame {
+    margin: 0%;
+    padding: 0%;
+    width: 160px;
+    position: absolute;
+}
+
+.icon {
+    width: 100%;
+}
+*/
+ 
 .icon {
     width: 100%;
     clip-path: circle();
-    border: 3px solid rgb(255 255 255 / 0.25);
+    border: 3px solid rgb(255 255 255 / 0.5);
     border-radius: 50%;
     box-sizing: border-box;
 }
