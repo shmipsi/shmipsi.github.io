@@ -13,6 +13,55 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
+    <script>
+        // Function to delete a cookie 
+        function deleteCookie(name) {
+            document.cookie = name + '=; Max-Age=-99999999;';
+        }
+
+        function setCookie2(name, value, days) {
+            let expires = "";
+            if (days) {
+                const date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "") + expires + "; path=/; Secure; SameSite=Strict";
+        }
+        // Function to set a cookie 
+        function setCookie(event) {
+            event.preventDefault()
+            var Form1 = document.form1;
+            var uname = Form1.user_name.value;
+            var checks = 0;
+            if (uname == "") {
+                alert("Заповніть Ім'я");
+                checks++;
+            }
+            if (checks == 0) {
+                deleteCookie("username");
+                setCookie2("username", uname, 1);
+            }
+            return;
+        }
+
+        // Function to get a cookie by name 
+        function getCookie2(name) {
+            const nameEQ = name + "=";
+            const ca = document.cookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+        function getCookie(event) {
+            event.preventDefault()
+            const uname = getCookie2("username");
+            alert("Вас звати " + uname);
+        }
+    </script>
 </head>
 
 <body>
@@ -85,6 +134,17 @@
                 my projects (coming soon), useful services and apps that I use,
                 and more. Feel free to explore it yourself!
             </p>
+            <form name="form1" id="form1">
+                <h2>Cookies</h2>
+                <p>Введіть ваше ім'я</p>
+                <input type="text" name="user_name" size="40" maxlength="40" />
+                <button onclick="setCookie(event)">
+                    Submit Cookies
+                </button>
+                <button onclick="getCookie(event)">
+                    Show Cookies
+                </button>
+            </form>
         </div>
     </main>
     <footer>
